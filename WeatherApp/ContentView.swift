@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+internal import _LocationEssentials
 
 extension Font {
     static let nunitoReg = Font.custom("Nunito", size: 20)
@@ -14,11 +15,14 @@ extension Font {
 }
 
 struct ContentView: View {
+    
+    @State var locationManager = LocationManager()
+    
     var body: some View {
         VStack {
             VStack {
                 HStack {
-                    
+                    Text("\(locationManager.location?.coordinate.latitude ?? 0.0), \(locationManager.location?.coordinate.longitude ?? 0.0)")
                 }
                 HStack {
                     Text("Oakville")
@@ -36,11 +40,11 @@ struct ContentView: View {
                         Text("24°")
                             .font(.nunitoTitle)
                             .fontWeight(.semibold)
-                        Text("Feels 21°")
+                        Text("Feels like 21°")
                             .font(.nunitoSmall)
                             .fontWeight(.semibold)
                     }
-                    .padding(.trailing, 30)
+                    .padding(.trailing, 5)
                     
                 }
                 .frame(width: 150, height: 180)
@@ -63,7 +67,7 @@ struct ContentView: View {
                     .foregroundStyle(Color.black)
 
                     VStack (spacing: 0) {
-                        HStack{
+                        HStack (spacing: 8){
                             Image(systemName: "arrow.up")
                                 .resizable()
                                 .frame(width: 15, height: 15)
@@ -72,7 +76,7 @@ struct ContentView: View {
                                 .font(.nunitoReg)
                                 .fontWeight(.semibold)
                         }
-                        HStack{
+                        HStack (spacing: 8) {
                             Image(systemName: "arrow.down")
                                 .resizable()
                                 .frame(width: 15, height: 15)
