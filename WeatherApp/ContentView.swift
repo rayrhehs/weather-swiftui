@@ -11,7 +11,8 @@ internal import _LocationEssentials
 extension Font {
     static let nunitoReg = Font.custom("Nunito", size: 20)
     static let nunitoTitle = Font.custom("Nunito", size: 34)
-    static let nunitoSmall = Font.custom("Nunito", size: 17)
+    static let nunitoSmall = Font.custom("Nunito", size: 15)
+    static let nunitoXS = Font.custom("Nunito", size: 10)
 }
 
 struct ContentView: View {
@@ -53,13 +54,18 @@ struct ContentView: View {
                 .foregroundStyle(Color.white) // text color
 
                 VStack {
-                    HStack (spacing: 8) {
+                    HStack (spacing: 12) {
                         Image(systemName: "cloud.rain.fill")
                             .resizable()
-                            .frame(width: 25, height: 25)
-                        Text("5%")
-                            .font(.nunitoReg)
-                            .fontWeight(.semibold)
+                            .frame(width: 27.5, height: 27.5)
+                        VStack (spacing: -5){ 
+                            Text("2.41")
+                                .font(.nunitoReg)
+                                .fontWeight(.semibold)
+                            Text("mm/h")
+                                .font(.nunitoSmall)
+                                .fontWeight(.semibold)   
+                        }
                     }
                     .frame(width: 150, height: 85)
                     .background(Color.yellow)
