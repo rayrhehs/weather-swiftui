@@ -34,7 +34,7 @@ extension LocationManager {
         guard let newLocation = locations.last else { return }
         location = newLocation
         
-        manager.stopUpdatingLocation()
+//        manager.stopUpdatingLocation()
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

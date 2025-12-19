@@ -48,16 +48,6 @@
 			path = WeatherApp;
 			sourceTree = "<group>";
 		};
-		C8F101F52EEB5C4500DCB47F /* WeatherAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppTests;
-			sourceTree = "<group>";
-		};
-		C8F101FF2EEB5C4500DCB47F /* WeatherAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				C8F101E72EEB5C4300DCB47F /* WeatherApp */,
-				C8F101F52EEB5C4500DCB47F /* WeatherAppTests */,
-				C8F101FF2EEB5C4500DCB47F /* WeatherAppUITests */,
 				C8F101E62EEB5C4300DCB47F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				C8F101F42EEB5C4500DCB47F /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				C8F101F52EEB5C4500DCB47F /* WeatherAppTests */,
-			);
 			name = WeatherAppTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				C8F101FE2EEB5C4500DCB47F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C8F101FF2EEB5C4500DCB47F /* WeatherAppUITests */,
 			);
 			name = WeatherAppUITests;
 			packageProductDependencies = (
@@ -284,6 +266,8 @@
 /* Begin XCBuildConfiguration section */
 		C8F102042EEB5C4500DCB47F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C8F101E72EEB5C4300DCB47F /* WeatherApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -348,6 +332,8 @@
 		};
 		C8F102052EEB5C4500DCB47F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C8F101E72EEB5C4300DCB47F /* WeatherApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -405,6 +391,8 @@
 		};
 		C8F102072EEB5C4500DCB47F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C8F101E72EEB5C4300DCB47F /* WeatherApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +427,8 @@
 		};
 		C8F102082EEB5C4500DCB47F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C8F101E72EEB5C4300DCB47F /* WeatherApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

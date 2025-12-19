@@ -10,10 +10,11 @@ import Foundation
 struct WeatherResponse: Codable {
     let name: String
     let main: MainWeatherData
-    let rain: RainData
-    let generalWeatherData: [GeneralWeatherData]
+    let rain: RainData?
+    let weather: [GeneralWeatherData]
 }
 
+// sub structs
 struct MainWeatherData: Codable {
     let temp: Double
     let feelsLike: Double

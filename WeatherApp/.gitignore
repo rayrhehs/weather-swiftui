@@ -1,0 +1,5 @@
+Secrets.xcconfig
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+.DS_Store
