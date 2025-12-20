@@ -51,8 +51,9 @@ struct ContentView: View {
                         Text("Feels like \(Int(weatherData.main.feelsLike - 273.15))°")
                             .font(.nunitoSmall)
                             .fontWeight(.semibold)
+                            .frame(width: 100)
                     }
-                    .padding(.trailing, 5)
+                    .padding(.trailing)
                     .frame(width: 100, alignment: .leading) // this fixes the width of the vstack, preventing it from scaling
                     
                 }
